@@ -1,0 +1,35 @@
+body {
+    background-color: whitesmoke;
+    color: black;
+    text-align: left;
+    font-family: 'Syne Mono', monospace;
+  }
+  
+  p {
+    background-color:black;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Butcherman', cursive;
+  }
+
+ h2 {
+    text-align:left;
+    font-weight: bold
+  }
+
+  #fancy {
+      color: rgba(253, 7, 7, 0.781);
+  }
+
+.picture { background-color: black;
+border: 1px solid black; padding: 3px;
+font: 11px/1.4em Arial, sans-serif; }
+.picture img { border: 1px solid black;
+vertical-align:middle; margin-bottom: 3px; }
+.right { margin: 0.5em 0pt 0.5em 0.8em; float:right; }
+.left { margin: 0.5em 0.8em 0.5em 0; float:left; }
