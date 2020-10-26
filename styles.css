@@ -1,7 +1,7 @@
 body {
     background-color: whitesmoke;
     color: black;
-    text-align: left;
+    text-align: center;
     font-family: 'Syne Mono', monospace;
   }
   
@@ -24,8 +24,12 @@ body {
 
   #fancy {
       color: rgba(253, 7, 7, 0.781);
+      font-size: 50px;
+      letter-spacing: 2px;
   }
-
+ img {
+   width: 100%;
+ }
 .picture { background-color: black;
 border: 1px solid black; padding: 3px;
 font: 11px/1.4em Arial, sans-serif; }
