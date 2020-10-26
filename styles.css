@@ -3,18 +3,21 @@ body {
     color: black;
     text-align: center;
     font-family: 'Syne Mono', monospace;
+    margin: 25px;
   }
   
-  .header {
+  header {
     background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
-  }
+    font-size: 75px;
+    vertical-align: baseline;
+    margin: 0px;
+   }
   .header-img {
     width: 100%;
     height: 400px;
     background: url("https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Halloween-PNG-Pictures/Dripping_Blood_Decor_Transparent_PNG_Clip_Art_Image.png?m=1507172109");
     background-size: cover;
+    margin: 0px;
   }
   p {
     background-color:black;
@@ -24,36 +27,39 @@ body {
 
   h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: 75px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
     font-family: 'Butcherman', cursive;
   }
 
  h2 {
-    text-align:left;
     font-weight: bold
   }
-
-  #fancy {
-      color: rgba(253, 7, 7, 0.781);
-      text-shadow: 2px 2px 5px rgb(48, 47, 47);
-      font-size: 50px;
-      letter-spacing: 2px;
-      word-spacing: 5px;
-  }
- img {
-   width: 100%;
+ h3{
+   font-size: 30px;
+   text-align: left;
  }
+  #fancy {
+      font-size: 36px;
+      color: rgb(170, 21, 21);
+      text-shadow: 2px 2px 5px rgb(48, 47, 47);
+      
+  }
+  img {
+    width: 426px;
+    height: auto;
+  }
 
- div. {
-  width: 300px;
-  padding: 25px;
-  box-sizing: border-box;
-  background-color: lightblue;
+ div.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
 }
-.picture { background-color: black;
-border: 1px solid black; padding: 3px;
-font: 11px/1.4em Arial, sans-serif; }
-.picture img { border: 1px solid black;
-vertical-align:middle; margin-bottom: 3px; }
-.right { margin: 0.5em 0pt 0.5em 0.8em; float:right; }
-.left { margin: 0.5em 0.8em 0.5em 0; float:left; }
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
