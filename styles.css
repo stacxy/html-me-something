@@ -148,9 +148,9 @@ h3 {
 }
 
 img {
-  height:300px;
+  height: 100%;
   width: auto;
-  object-fit: scale-down;
+  object-fit: scale-down ;
 }
 
 
@@ -245,10 +245,9 @@ ul.gallery li  {
 
 .row {
   display: flex;
-  text-align: center;
 }
 
 .column {
-  flex: 33.33%;
+  flex: 24%;
   padding: 2px;
 }
