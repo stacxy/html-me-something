@@ -52,25 +52,31 @@ article {
 }
 
 div {
-  margin: 0px;
+  margin: 5px;
 	padding: 10px ;  
 }
 
 div.container {
+  position: relative;
   width: 100%;
   background-color:  black;
   border: 10px solid white;
 }
 
 div.box {
- 
-  width: 50%;
+  border: 3px solid black;
+  width: 100%;
+  padding: 20%;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+ul li {
+  padding: 5px 0px;
 }
 
 a:link {
@@ -104,6 +110,8 @@ h1 {
 }
 
 h2 {
+  background-color: black;
+  color: white;
   font-size: 30px;
   font-weight: bold
 }
@@ -113,6 +121,10 @@ h3 {
   font-weight: bold;
   font-size: 66px;
   color: white;
+ }
+
+ #label {
+   position: absolute;
  }
 
 #fancy {
@@ -127,37 +139,116 @@ h3 {
   font-weight: bolder;
 }
 
+#surprise {
+  background-image: url(images\bdaysurprise.jpg);
+}
+
+#surprise :hover {
+  background-image: url(images\straycat.JPG);
+}
+
 img {
-  width: 350px;
-  height: auto;
+  height:300px;
+  width: auto;
+  object-fit: scale-down;
 }
 
-#polaroid {
-  width: 300px;
-  height: auto;
-}
 
-#label {
-  font-size: 14px;
-  text-align: left;
-  margin: 0;
-  padding: 10px 10px;
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
 }
 
 .polaroid {
-  width: 45%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 15px;
+  text-align: center;
+  line-height: 2em;
+}
+
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+
+
+span {
+  display: block;
+  width: 100vw;
+  
+  
+}
+
+#container {
+  width: 600px;
+  margin: 40px auto;
+}
+
+ul.gallery li  {
+  
+	float: left;
+	padding: 10px 10px 25px 10px;
+	background: #eee;
+	border: 1px solid #fff;
 }
 
 .row {
   display: flex;
+  text-align: center;
 }
 
 .column {
-  flex: 49%;
-  padding: 5px 5px;
+  flex: 33.33%;
+  padding: 2px;
 }
-
-
